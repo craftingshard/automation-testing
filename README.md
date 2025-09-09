@@ -13,3 +13,19 @@ This repository contains a **Playwright-based end-to-end (E2E) automation framew
 ```bash
 npm install
 npx playwright install
+
+## 🧪 Run Tests
+npm run test
+npm run test:headed
+npm run test:ui
+
+## 📊 Reports
+Playwright HTML Report → npx playwright show-report
+Allure Report → npm run report:allure
+
+---
+
+```bash
+git add .
+git commit -m "Initial Playwright automation framework"
+git push origin main
