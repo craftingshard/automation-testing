@@ -1,0 +1,32 @@
+{
+  "name": "playwright-template",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:ui": "npx playwright test --ui",
+    "test:debug": "npx playwright test --debug",
+    "test:report": "npx playwright show-report",
+    "test:ci": "npx playwright test --reporter=dot",
+    "report:allure": "allure generate ./allure-results --clean -o ./allure-report && allure open ./allure-report",
+    "report:allure:generate": "allure generate ./allure-results --clean -o ./allure-report",
+    "report:allure:serve": "allure serve ./allure-results"
+  },
+  "keywords": [
+    "base-template",
+    "playwright",
+    "e2e",
+    "automation",
+    "playwright for beginner"
+  ],
+  "author": "Minh Dai",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.55.0",
+    "@types/node": "^24.3.1",
+    "allure-commandline": "^2.34.1",
+    "allure-playwright": "^3.3.3"
+  }
+}
